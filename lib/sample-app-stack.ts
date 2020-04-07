@@ -7,7 +7,7 @@ export class SampleAppStack extends cdk.Stack {
         super(scope, id, props);
 
         const s3Bucket = new Bucket(this, "testBucket", {
-            bucketName: 'test-bucket-' + Aws.ACCOUNT_ID,
+            // bucketName: 'test-bucket-' + Aws.ACCOUNT_ID,
             blockPublicAccess: BlockPublicAccess.BLOCK_ALL
         });
     }
